@@ -1,0 +1,1 @@
+(yabai -m window --focus  stack.next || yabai -m window --focus  stack.first && exit 1) || (yabai -m window --focus next || yabai -m window --focus first)

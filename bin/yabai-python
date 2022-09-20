@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/Users/void/src/yabai-python/venv/bin/python /Users/void/src/yabai-python/main.py $1
