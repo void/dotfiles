@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+declare -A float_regex
 # necessary to load scripting-addition during startup on macOS Big Sur
 # *yabai --load-sa* is configured to run through sudo without a password
 sudo yabai --load-sa
@@ -33,5 +34,6 @@ yabai -m config left_padding                 20
 yabai -m config right_padding                20
 yabai -m config window_gap                   10
 
-yabai -m rule --add app="^VLC$" manage=off border=off
+float_regex="(VLC|Friendly Streaming)"
+yabai -m rule --add app="${float_regex}" manage=off border=off
 
