@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-declare -A float_regex
 # necessary to load scripting-addition during startup on macOS Big Sur
 # *yabai --load-sa* is configured to run through sudo without a password
 sudo yabai --load-sa
