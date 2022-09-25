@@ -31,6 +31,7 @@ yabai -m config bottom_padding               20
 yabai -m config left_padding                 20
 yabai -m config right_padding                20
 yabai -m config window_gap                   10
+yabai -m config window_animation_duration   0.35
 
 float_regex="(VLC|Friendly Streaming|Cisco AnyConnect Secure Mobility Client)"
 yabai -m rule --add app="${float_regex}" manage=off border=off
